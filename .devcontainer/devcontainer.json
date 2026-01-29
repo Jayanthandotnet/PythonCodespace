@@ -1,0 +1,26 @@
+
+{
+    "name": "Hello Python (Codespaces)",
+    "features": {
+      "ghcr.io/devcontainers/features/python:1": {
+        "version": "3.12"
+      }
+    },
+    "postCreateCommand": "pip install -r requirements.txt || true",
+    "customizations": {
+      "vscode": {
+        "extensions": [
+          "ms-python.python",
+          "ms-python.vscode-pylance",
+          "ms-python.pylint",
+          "ms-python.vscode-python-envs"
+        ],
+        "settings": {
+          "python.defaultInterpreterPath": "/usr/local/bin/python",
+          "python.analysis.typeCheckingMode": "basic"
+        }
+      }
+    },
+    "remoteUser": "vscode"
+  }
+  
